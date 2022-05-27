@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  return <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  return <nav className="navbar navbar-expand-lg navbar-light bg">
   <div className="container-fluid">
     <Link className="navbar-brand" to="/">Colist</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
