@@ -1,8 +1,10 @@
 const express=require("express");
 const connectToMongo=require("./db");
 connectToMongo();
-const app=express();
 
+
+const app=express();
+const PORT=4000;
 var cors=require("cors");
 app.use(cors());
 app.use(express.json()); // middleware used
@@ -11,7 +13,6 @@ app.use(express.json()); // middleware used
 app.use('/api/auth',require("./routes/auth"));
 app.use('/api/contest',require("./routes/contest"));
 
-const PORT=4000;
 app.listen(PORT,()=>{
     console.log(`app is listening on http://localhost:${PORT}`);
 })
